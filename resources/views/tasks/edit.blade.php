@@ -4,6 +4,7 @@
 
     <h1>id: {{ $task->id }} のメッセージ編集ページ</h1>
     
+    @include('commons.error_messages')
 
     {!! Form::model($task, ['route' => ['tasks.update', $task->id], 'method' => 'put']) !!}
 

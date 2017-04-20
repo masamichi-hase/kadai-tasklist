@@ -5,7 +5,9 @@
         <title>TaskBoard</title>
     </head>
 
-    <body>
+   <body>
+        @include('commons.error_messages')
+
         @yield('content')
     </body>
 </html>

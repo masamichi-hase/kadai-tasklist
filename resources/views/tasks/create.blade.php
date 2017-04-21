@@ -7,8 +7,11 @@
     @include('commons.error_messages')
     
     <div class="row">
-        <div class="col-xs-6">
+        <div class="col-xs-12">
+        <div class="col-sm-offset-2 col-sm-6 col-md-6">
+        <div class="col-lg-offset-3 col-sm-3">
             {!! Form::model($task, ['route' => 'tasks.store']) !!}
+            
             
                 <div class="form-group">
                     {!! Form::label('status', 'タイトル:') !!}
@@ -23,5 +26,7 @@
                 {!! Form::submit('投稿', ['class' => 'btn btn-primary']) !!}
         
             {!! Form::close() !!}
+        </div>
+        </div>
         </div>
     </div>

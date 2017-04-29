@@ -18,3 +18,6 @@ Route::post('signup', 'Auth\AuthController@postRegister')->name('signup.post');
 Route::get('/', function () {
     return view('welcome');
 });
+Route::group(['middleware' => 'auth'], function () {
+    Route::resource('users', 'UsersController', ['only' => ['index', 'show']]);
+});

@@ -19,8 +19,7 @@ class UsersController extends Controller
             'users' => $users,
         ]);
     }
-    
-       public function show($id)
+    public function show($id)
     {
         $user = User::find($id);
         

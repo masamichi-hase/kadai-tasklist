@@ -16,7 +16,7 @@
                 <ul class="nav navbar-nav navbar-right">
                      @if (Auth::check())
                         {!! link_to_route('users.index', 'Users') !!}
-                    <li><a href="#">Signup</a></li>
+                    <li>{!! link_to_route('signup.get', 'Signup') !!}</li>
                     <li><a href="#">Login</a></li>
                 </ul>
             </div>
